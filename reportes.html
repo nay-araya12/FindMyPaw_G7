@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Crear Reporte - FindMyPaw</title>
     <link rel="stylesheet" href="css/reportes.css">
 </head>
+
 <body>
 
     <main class="contenedor">
@@ -53,7 +55,18 @@
             <textarea id="descripcion" placeholder="Explique lo ocurrido" required></textarea>
 
             <label>Imagen del perro</label>
+
             <input type="file" id="imagen" accept="image/*">
+
+            <div class="contenedor-imagen">
+
+                <img id="vistaPrevia" src="" alt="Vista previa del perro">
+
+                <button type="button" id="eliminarImagen">
+                    Eliminar foto
+                </button>
+
+            </div>
 
             <div class="mapa">
                 Simulación de mapa / ubicación del avistamiento
@@ -66,4 +79,5 @@
 
     <script src="js/reportes.js"></script>
 </body>
+
 </html>
